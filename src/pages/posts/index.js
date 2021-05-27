@@ -1,10 +1,10 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-export default function Postagem() {
+export default function posts() {
   return (
     <View>
-      <Text>Novo Post</Text>
+      <Text>posts</Text>
     </View>
   );
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-export default function Contato() {
+export default function galery() {
   return (
     <View>
-      <Text>Contato</Text>
+      <Text>My galery</Text>
     </View>
   );
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-export default function Vagas() {
+export default function profile() {
   return (
     <View>
-      <Text>Vagas</Text>
+      <Text>profile</Text>
     </View>
   );
 }

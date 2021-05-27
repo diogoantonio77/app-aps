@@ -5,26 +5,26 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import  Icon  from 'react-native-vector-icons/Ionicons'
 
-import Home from './src/pages/home';
-import Contatos from './src/pages/contatos';
-import Postagem from './src/pages/postagem';
+import posts from './src/pages/posts';
+import feeds from './src/pages/feed';
+import galery from './src/pages/galery';
 import Vagas from './src/pages/vagas';
 
 
 const Tab = createBottomTabNavigator();
 
 const icons = {
-  Home: {
-    name: 'ios-home'
+  posts: {
+    name: 'add-circle-outline'
   },
-  Contatos: {
-    name: 'ion-ios-contacts'
+  feeds: {
+    name: 'planet-outline'
   },
-  Postagem: {
-    name: 'ion-ios-add-circle'
+  galery: {
+    name: 'document-outline'
   },
-  Vagas: {
-    name: 'ion-ios-briefcase'
+  profile: {
+    name: 'people-outline'
   }
 }
 
@@ -45,10 +45,10 @@ export default function App() {
             activeBackgroundColor: '#FFF'
           }}
         >
-            <Tab.Screen name="Home" component={Home} />
-            <Tab.Screen name="Contatos" component={Contatos} />
-            <Tab.Screen name="Publicação" component={Postagem} />
-            <Tab.Screen name="Vagas" component={Vagas} />
+            <Tab.Screen name="posts" component={posts} />
+            <Tab.Screen name="feeds" component={feeds} />
+            <Tab.Screen name="Publicação" component={galery} />
+            <Tab.Screen name="Vagas" component={profile} />
         </Tab.Navigator>
     </NavigationContainer>
   );
